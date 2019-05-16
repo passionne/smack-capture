@@ -1,0 +1,61 @@
+body {
+    height: calc(100vh - 100px);
+}
+
+.hidden {
+    display: none !important;
+}
+
+#picture-icon-button {
+    position: absolute;
+    bottom: 24px;
+    left: calc(50% - 28px);
+}
+
+.loader-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-container > img {
+    width: 20vw;
+    height: 20vw;
+}
+
+.my-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-toolbar > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.my-toolbar > button {
+    margin-right: 10px;
+}
+
+@media (max-width: 350px) {
+    .my-toolbar > div > img {
+        margin-right: -10px !important;
+    }
+}
+
+@media (max-width: 330px) {
+    .my-toolbar > div > img {
+        margin-right: -20px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .my-toolbar > div > img {
+        margin-right: -25px !important;
+    }
+}

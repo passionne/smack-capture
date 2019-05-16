@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>VisualSearch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="node_modules/material-components-web/dist/material-components-web.css">
+</head>
+<body class="mdc-typography">
+<header class="mdc-toolbar mdc-toolbar--fixed">
+    <div class="mdc-toolbar__row my-toolbar">
+        <div>
+            <img id="picture-icon-buttonback-button" class="material-icons mdc-toolbar__menu-icon hidden"
+                 src="assets/ic_arrow_back_white_24px.svg" alt="back icon">
+            <span class="mdc-toolbar__title">Recherche par image</span>
+        </div>
+    </div>
+</header>
+<div id="loader" class="loader-container hidden">
+    <img src="assets/loader.gif" alt="cool loader">
+</div>
+<div id="explaination"
+     style="display: flex; width: 100vw; justify-content: center;align-items: center;flex-direction: column; margin-top: 75px">
+    <img style="width: 80%;" src="assets/photo_search_icons.png" alt="">
+    <p style="width: 80%;">Prenez une photo d'un vêtement</p>
+</div>
+<div id="images" style="margin-top: 75px; text-align: center;">
+
+</div>
+<button id="picture-icon-button" class="mdc-fab material-icons" aria-label="Favorite">
+    <span class="mdc-fab__iretake-picturecon">
+        <img src="assets/ic_photo_camera_white_24px.svg" alt="camera icon">
+    </span>
+</button>
+<div id="confirmation" class="hidden" style="text-align: center;">
+    <button class="mdc-fab material-icons" aria-label="Favorite" id="cancel">
+        <span class="mdc-fab__icon">
+            <img src="assets/ic_cancel_white_24px.svg" alt="cancel icon">
+        </span>
+    </button>
+    <button class="mdc-fab material-icons" aria-label="Favorite" id="validate">
+        <span class="mdc-fab__icon">
+            <img src="assets/ic_send_white_24px.svg" alt="valid icon">
+        </span>
+    </button>
+</div>
+
+<script type="application/javascript" src="js/script.js"></script>
+<script src="node_modules/material-components-web/dist/material-components-web.js"></script>
+<script>mdc.autoInit();</script>
+</body>
+</html>
