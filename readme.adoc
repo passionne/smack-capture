@@ -1,0 +1,30 @@
+= Smack Capture
+
+== Quickstart
+
+=== Prerequis
+
+* npm
+* python 3
+
+=== Installation
+
+Minimal installation need python3 with module flask and flask-cors
+
+[source,bash]
+----
+$> npm install #(optional)
+$> python -m pip install --requirement requirements.txt
+----
+
+=== Run
+
+Make `server.py` executable if not already is and run it.
+
+[source,bash]
+----
+$> chmod u+x server.py
+$> ./server.py
+----
+
+And go to : http://localhost:8000/
