@@ -4,7 +4,7 @@
     window.onload = () => {
         console.log('Application loaded !');
 
-        const apiUrl = 'https://smack-api-url.fr/v1/pictures';
+        const apiUrl = 'http://localhost:8000/api/v1/pictures';
         const pictureIconButton = document.getElementById('picture-icon-button');
         const explanation = document.getElementById('explaination');
         const confirmation = document.getElementById('confirmation');
@@ -27,7 +27,7 @@
 
             validate.addEventListener('click', () => {
                 // TODO: intercepter le retour des appels de l'API par ici
-                debugger;
+                // debugger;
                 putCanvasInCache(`image-${new Date().getTime()}.jpg`, resizedImageCanvas);
             });
 
@@ -117,10 +117,10 @@
 
             fetch(apiUrl, {
                 method: 'post',
-                body: blob
+                body: formData
             }).then(function(response) {
                 // TODO: intégrer la réponse du back ici si il en a une...
-                debugger;
+                // debugger;
                 hide(loader);
             });
 

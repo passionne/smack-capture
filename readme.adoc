@@ -28,3 +28,24 @@ $> ./server.py
 ----
 
 And go to : http://localhost:8000/
+
+
+== Developer
+
+Image was sent from webpage when function `callAPI` call `fetch` in JS.
+This api call was proceed in python on `api_upload_picture(...)`
+and delegate for processing to `data_processing(..)` which get file path
+in argument and must return a json that was returned to JS.
+
+
+
+== Externals documentations
+
+=== Python
+
+* http://flask.pocoo.org/docs/1.0/[Flask]
+* https://pypi.org/project/Flask-Cors/[Flask CORS]
+** https://flask-cors.corydolphin.com/en/latest/api.html[CORS configuration]
+* http://flask.pocoo.org/docs/1.0/patterns/fileuploads/[Flask file upload]
+* https://stackoverflow.com/questions/47950867/how-to-save-base64-image-in-python-flask-server[python and base64]
+* https://werkzeug.palletsprojects.com/en/0.15.x/datastructures/#werkzeug.datastructures.FileStorage[canvas.blob to python FileStorage]
